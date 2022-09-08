@@ -32,7 +32,7 @@
                 <th>Excerpt</th>
 
                 <th>Read full Article</th>
-                <th>Author</th>
+                <!-- <th>Author</th> -->
                 <!-- <th>Feature Media</th> -->
 
                 <th>Feature Media </th>
@@ -65,7 +65,6 @@
                     </td>
 
                     <td><?php echo "<a target='_blank' href='" . $outter_key['link'] . "'>Click here</a>"; ?></a></td>
-                    <td><?php echo $outter_key['author']; ?></td>
 
 
 
