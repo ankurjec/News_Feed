@@ -14,6 +14,18 @@
         table.dataTable thead tr {
             background-color: #99d6ff;
         }
+
+        a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: blue;
+}
     </style>
 </head>
 
@@ -22,7 +34,7 @@
         <h1 style="color:white;">News Feeds</h1>
     </nav>
     <marquee width="1520px" style="font-size: 12pt; height:32px;padding-bottom: 10px;" behavior="scroll" direction="left" bgcolor="#DEE9FB" scrollamount="2" scrolldelay="60" onmouseover="this.stop()" onmouseout="this.start()">Displaying the Top News Headlines</a></li></marquee>
-    <table id="example" class="table table-striped table-bordered" style="width:100%">
+    <table id="example" class="table table-bordered" style="width:100%">
         <thead>
 
             <tr>
@@ -66,7 +78,7 @@
                         ?>
                     </td>
 
-                    <td><?php echo "<a target='_blank' href='" . $outter_key['link'] . "'>Click here</a>"; ?></a></td>
+                    <td><?php echo "<a class='button' target='_blank' href='" . $outter_key['link'] . "'>Click here</a>"; ?></a></td>
 
 
 
