@@ -26,7 +26,6 @@
         <thead>
 
             <tr>
-                <th>SL no.</th>
                 <th>Date</th>
                 <th>Title</th>
                 <th>Excerpt</th>
@@ -51,7 +50,6 @@
                 <tr>
 
 
-                    <td><?php echo $outter_key['id']; ?></td>
                     <td><?php echo $outter_key['date']; ?></td>
                     <td><?php
                         $news_title = $outter_key['title'];
