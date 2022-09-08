@@ -43,7 +43,6 @@
 
 <td><?php echo $outter_key['id'];?></td>
 <td><?php echo $outter_key['date'];?></td>
-<!--  -->
 <td><?php 
 $user = $outter_key['title'];
 echo $user['rendered'];
