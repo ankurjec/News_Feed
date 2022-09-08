@@ -25,26 +25,9 @@ class Welcome extends CI_Controller {
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$result = curl_exec($ch);
-		
 		// print_r($result);
 		curl_close($ch);
-		
 		$data['news'] = json_decode($result, true);
-
-// 		$users = array();
-// if (! empty($data->workers)) {
-//     foreach ($dec->workers as $worker) {
-//         $user['email'] = $worker->email;
-//         $user['manager_email'] = $worker->manager->email;
-//         $users[] = $user;
-//     }
-// }
-		
-		//print_r($data['news']);
-		// $data['goldPrice_latest'] = $this->Leads_model->get_price_latest(); // calling Post model method get_Status() to display Leads Stats in dashboard
-        //     $this->load->model('Leads_model'); // First load the model
-        //     $this->load->view('leads/change_rate', $data);  
-		
 		$this->load->view('welcome_message', $data);
 	}
 }
