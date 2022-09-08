@@ -50,7 +50,11 @@
                 <tr>
 
 
-                    <td><?php echo $outter_key['date']; ?></td>
+                    <td><?php $news_date = (($outter_key['date']));
+                    
+                  echo  date('d-m-Y', strtotime($news_date));
+                    
+                    ; ?></td>
                     <td><?php
                         $news_title = $outter_key['title'];
                         echo $news_title['rendered'];
