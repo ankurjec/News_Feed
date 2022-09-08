@@ -54,13 +54,13 @@
                     <td><?php echo $outter_key['id']; ?></td>
                     <td><?php echo $outter_key['date']; ?></td>
                     <td><?php
-                        $user = $outter_key['title'];
-                        echo $user['rendered'];
+                        $news_title = $outter_key['title'];
+                        echo $news_title['rendered'];
                         ?>
                     </td>
                     <td><?php
-                        $user = $outter_key['excerpt'];
-                        echo $user['rendered'];
+                        $news_excerpt = $outter_key['excerpt'];
+                        echo $news_excerpt['rendered'];
                         ?>
                     </td>
 
